@@ -1,0 +1,206 @@
+:root {
+    --color-verde: #55b429;
+    --header-griss: #495057;
+    --fondo-griss: #ecf0f1;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: white; /* Light grey background */
+    padding: 10px 20px; /* Padding around content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    color: var(--header-griss); /* Dark grey text for better readability */
+    margin-left: 200px;
+  }
+
+  .user-info p {
+    margin: 0 10px; /* Spacing between text and icon */
+    font-size: 16px; /* Slightly larger font size for readability */
+  }
+
+  .user-info strong {
+    margin-left: 5px; /* Space between label and value */
+  }
+
+  button {
+    background-color: transparent;
+    color: var(--fondo-griss);
+    border: none;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    width: 200px;
+    background-color: var(--fondo-griss); /* Light grey background */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    border-right: 20px;
+    font-weight: bold;
+  }
+
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 10px;
+  }
+
+  .sidebar ul li a {
+    color: var(--header-griss);
+    text-decoration: none;
+  }
+
+  .sidebar ul li i {
+    margin-right: 10px;
+  }
+
+  main {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+  .filters {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button {
+    margin-right: 10px;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+
+  .table {
+    background-color: #ffffff; /* Verde claro */
+    border-radius: 10px;
+    font-size: 15px;;
+  }
+
+  .table.table-header {
+    border-radius: 10px;
+  }
+
+  .table-option {
+    color: var(--header-griss)
+  }
+
+  .buton-edit {
+    background-color: rgb(57, 57, 251);
+    color: white;
+  }
+
+  .buton-delete {
+    background-color: rgb(255, 70, 70);
+    color: white;
+  }
+
+  .buton-edit:hover {
+    color: white;
+  }
+
+  .buton-delete:hover {
+    color: white;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .img {
+    width: 120px;
+    height: 60px;
+    margin-top: -80px;
+    border-radius: 5%; /* Redondear la imagen */
+    margin-left: -20px;
+  }
+
+  /* Estilos para el encabezado de la tabla */
+  .table {
+    border-radius: 10px; /* Borde redondeado para la tabla */
+    overflow: hidden; /* Oculta los bordes redondeados de los elementos secundarios */
+    background-color: var(--fondo-griss);
+  }
+
+  /* Estilos para el encabezado de la tabla */
+  .table thead {
+    background-color:var(--header-griss); /* Color de fondo opaco */
+  }
+
+  /* Borde redondeado en la parte superior del encabezado de la tabla */
+  .table thead th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  .table thead th:last-child {
+    border-top-right-radius: 10px;
+  }
+
+  .icon{
+    color: var(--color-verde);
+    font-size: 15px;
+  }
+
+  .icon-delete {
+    color: var(--color-verde);
+    font-size: 16px;
+  }
+
+  .icon-delete:hover {
+    color: rgb(252, 136, 136);
+    font-size: 16px;
+  }
+
+  .icon-edit {
+    color: var(--color-verde);
+    font-size: 15px;
+  }
+
+  .icon-edit:hover {
+    color: rgb(102, 128, 241);
+    font-size: 15px;
+  }
+
+  .contend-icon-filter{
+    color: white;
+  }
+
+  .nav-item {
+    padding: 0px;
+  }
+
+  .nav-item:hover {
+    background-color: rgb(170, 183, 174); /* Color de fondo verde al pasar el ratón */
+}
+
+.title {
+ color:var(--header-griss);
+}
+
+.table-header-title {
+vertical-align: middle; /* Alinea verticalmente el texto con el icono */
+color: white;
+margin-left: 5px;
+}
