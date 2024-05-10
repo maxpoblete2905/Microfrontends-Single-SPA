@@ -1,0 +1,28 @@
+<single-spa-router>
+  <div class="layout">
+    <header>
+      <!-- Microfrontend para el header, siempre visible -->
+      <application name="@microfrontend/mf-header"></application>
+    </header>
+    <nav>
+      <!-- Microfrontend para la navegación, con enlaces a diferentes partes de la app -->
+      <!-- <application name="@microfrontend/mf-navbar"></application> -->
+    </nav>
+    <main class="content">
+      <!-- Rutas que cargan diferentes microfrontends en el área de contenido -->
+      <route path="/dashboard">
+        <!-- <application name="@microfrontend/mf-dashboard"></application> -->
+      </route>
+      <route path="/users">
+        <application name="@microfrontend/mf-users"></application>
+      </route>
+      <route default>
+        <!-- <application name="@microfrontend/mf-home"></application> -->
+      </route>
+    </main>
+    <footer>
+      <!-- Microfrontend para el footer, siempre visible -->
+      <!-- <application name="@microfrontend/mf-footer"></application> -->
+    </footer>
+  </div>
+</single-spa-router>
